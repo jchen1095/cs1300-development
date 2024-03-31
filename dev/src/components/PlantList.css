@@ -1,0 +1,17 @@
+/* PlantList.css */
+.plant-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px; 
+  }
+  
+  .col {
+    flex: 1 0 calc(16.666% - 20px); 
+    margin: 10px; 
+  }
+  
