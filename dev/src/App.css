@@ -1,12 +1,13 @@
 /* App.css */
+
 body {
-  background-color: #f0f8f0; /* Light green background */
-  color: #006400; /* Dark green text */
+  background-color: white;
+  color: #006400;
 }
 
 .App {
   text-align: center;
-  background-color: #e0ffe0; /* Light green */
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,15 +19,36 @@ body {
   margin-top: 20px;
 }
 
-.filters {
+.filters,
+.sort {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+
+.sort {
+  padding-top: 20px;
   margin-bottom: 20px;
 }
 
-.select-filter {
+.row{
+  padding-top: 40px;
+}
+.filters label,
+.sort label {
+  margin-right: 10px;
+}
+
+.filters select,
+.sort select {
   padding: 5px 10px;
   font-size: 16px;
   border-radius: 5px;
-  border: 2px solid #006400; /* Dark green border */
-  background-color: #f0fff0; /* Light green background */
-  color: #006400; /* Dark green text */
+  border: 2px solid #006400;
+  background-color: #f0fff0;
+  color: #006400;
+}
+
+.PlantList {
+  margin-top: 50px;
 }

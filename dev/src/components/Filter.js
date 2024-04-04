@@ -1,4 +1,4 @@
-// Filters.js
+// Filter.js
 import React from 'react';
 import plantsData from '../assets/plant-data';
 
