@@ -9,8 +9,7 @@ import plantsData from './assets/plant-data';
 function App() {
   const [plants, setPlants] = useState(plantsData);
   const [wishlist, setWishlist] = useState([]);
-  const [sortOrder, setSortOrder] = useState(null); // null: no sorting, 'asc': ascending, 'desc': descending
-
+  const [sortOrder, setSortOrder] = useState(null); 
   const addToWishlist = (plant) => {
     setWishlist([...wishlist, plant]);
   };

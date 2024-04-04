@@ -1,4 +1,3 @@
-// Aggregator.js
 import React from 'react';
 
 function Aggregator({ wishlist, removeFromWishlist }) {
@@ -6,7 +5,6 @@ function Aggregator({ wishlist, removeFromWishlist }) {
     removeFromWishlist(plantId);
   };
 
-  // Calculate total cost
   const totalCost = wishlist.reduce((total, plant) => total + plant.price, 0);
 
   return (

@@ -1,4 +1,3 @@
-// PlantList.js
 import React from 'react';
 import PlantItem from './PlantItem';
 import './PlantList.css';

@@ -1,4 +1,3 @@
-// PlantItem.js
 import React from 'react';
 import Rose from '../assets/Rose.jpg';
 import Tomato from '../assets/Tomato.jpg';
