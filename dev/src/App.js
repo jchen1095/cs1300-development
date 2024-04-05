@@ -10,10 +10,13 @@ function App() {
   const [plants, setPlants] = useState(plantsData);
   const [wishlist, setWishlist] = useState([]);
   const [sortOrder, setSortOrder] = useState(null); 
+
+  // add plant to wishlist
   const addToWishlist = (plant) => {
     setWishlist([...wishlist, plant]);
   };
 
+  // remove plant from wishlist
   const removeFromWishlist = (plantId) => {
     const index = wishlist.findIndex((plant) => plant.id === plantId);
     if (index !== -1) {
@@ -23,12 +26,14 @@ function App() {
     }
   };
 
+  //reset filters, make the default to show all plants
   const resetFilters = () => {
     setPlants(plantsData);
     document.getElementById('filter').value = 'all'; 
   };
   
 
+  // handle sorting of plants by price
   const handleSort = (order) => {
     setSortOrder(order);
     const sortedPlants = [...plants].sort((a, b) => {
@@ -47,7 +52,7 @@ function App() {
     <div className="App">
       <h1>Garden Planning Tool</h1>
       <div className="container">
-        <Filters plants={plants} setPlants={setPlants} resetFilters={resetFilters} />
+        <Filters setPlants={setPlants} resetFilters={resetFilters} />
         <Sort handleSort={handleSort} className="sort"/>
         <PlantList plants={plants} addToWishlist={addToWishlist} />
         <Aggregator wishlist={wishlist} removeFromWishlist={removeFromWishlist} />

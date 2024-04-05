@@ -3,6 +3,8 @@ import PlantItem from './PlantItem';
 import './PlantList.css';
 
 function PlantList({ plants, addToWishlist }) {
+
+  //make the list of plant items
   return (
     <div className="plant-list">
       <div className="row">

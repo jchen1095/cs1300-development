@@ -14,7 +14,8 @@ import Onion from '../assets/Onion.jpg';
 import './PlantItem.css';
 
 function PlantItem({ plant, addToWishlist }) {
-  const { id, name, category, price } = plant;
+//import images
+  const { name, category, price } = plant;
   let imageSrc;
   switch (name) {
     case 'Rose':

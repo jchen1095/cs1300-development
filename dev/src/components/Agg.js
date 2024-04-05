@@ -5,8 +5,10 @@ function Aggregator({ wishlist, removeFromWishlist }) {
     removeFromWishlist(plantId);
   };
 
+  // calculate total cost of wishlist items
   const totalCost = wishlist.reduce((total, plant) => total + plant.price, 0);
 
+  // make wishlist items with remove button
   return (
     <div className="aggregator">
       <h2>Wishlist</h2>

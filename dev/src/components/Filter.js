@@ -2,7 +2,9 @@ import React from 'react';
 import plantsData from '../assets/plant-data';
 
 
-function Filters({ plants, setPlants, resetFilters }) {
+function Filters({setPlants, resetFilters }) {
+
+  // make filtering based on selected category
   const handleFilter = (e) => {
     const category = e.target.value;
     if (category === 'all') {
